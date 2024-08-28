@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="CQcCOl" name="testapp" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="oQxwBU" name="testapp">
+    <GROUP id="{2F4F0C39-5C9D-7165-C477-E9897D67EF51}" name="Source">
+      <FILE id="Xzd9mS" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="wtCC5u" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="Xx0O6n" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES/>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="testapp"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="testapp"/>
+      </CONFIGURATIONS>
+    </LINUX_MAKE>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="testapp"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="testapp"/>
+      </CONFIGURATIONS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="testapp"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="testapp"/>
+      </CONFIGURATIONS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
